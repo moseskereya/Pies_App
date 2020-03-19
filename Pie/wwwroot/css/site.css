@@ -1,0 +1,156 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+.btn {
+    padding: 7px 14px;
+    text-decoration: none;
+    background-color: #ff5663;
+    color: #fff;
+    border: none;
+}
+
+.main-category {
+    background-color: #808080;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.jumbotron {
+    margin: 15px 0;
+}
+.jumbotron button{
+    background-color: #2a2727;
+    text-decoration:none;
+    font-display:swap;
+}
+
+    .jumbotron p {
+        padding: 4px;
+        font-size: 16px;
+    }
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 10px auto;
+    background-color: #ff1643;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .head {
+        flex-direction: column;
+    }
+}
+
+.price {
+    color: #8d8787;
+    padding: 10px;
+   font-weight: 300
+}
+
+.md-w {
+    padding: 10px 0;
+    margin: 0 15px;
+    background-color: #808080;
+}
+
+    .md-w p {
+        color: azure;
+    }
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.figure-caption-details {
+    background-color: #ff7961;
+    padding: 20px;
+    margin: 8px 0;
+}
+.figure-caption-details p {
+        color: #efefef;
+    }
+.container{
+    display: flex;
+}
+
+.container-1{
+    background : #8d8787;
+    margin: 20px 0;
+    padding : 20px;
+}

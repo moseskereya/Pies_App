@@ -1,0 +1,25 @@
+﻿@model Pie.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.Name</h1>
+
+<div class="thumbnail">
+    <img src="@Model.ThumbNail " class="img-thumbnail" alt="Alternate Text" />
+    <div class="figure-caption-details">
+        <h6 class="text-right ">@Model.Price.ToString("c")</h6>
+        <h5>
+            <a>@Model.Name</a>
+        </h5>
+        <p>@Model.ShortDescription</p>
+        <p>@Model.LongDescription</p>
+        <div class="row1">
+            <button class="btn">
+                <a asp-controller="Products" asp-action="Index">Back</a>
+            </button>
+        </div>
+    </div>
+</div>
+

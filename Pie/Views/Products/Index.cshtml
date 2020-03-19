@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Pie.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="row">
+    <div class="col-sm-4">
+        <h5>Pies List</h5>
+        <form asp-controller="Products" asp-action="Index">
+            <p>
+                Name : <input type="text" name="Search">
+                <input type="submit" value="Search" />
+            </p>
+        </form>
+    </div>
+    <div class="col-sm-6">
+        @foreach (var item in Model)
+        {
+            <img src="@item.ThumbNail" class="img-thumbnail img-responsive" alt="pies" />
+            <div class="figure-caption">
+                <h6 class="text-right price">@item.Price.ToString("c")</h6>
+                <h5>
+                    <a asp-controller="Products" asp-action="Details" asp-route-id="@item.Id">@item.Name</a>
+                </h5>
+                <p>@item.ShortDescription</p>
+            </div>
+        }
+    </div>
+</div>
+   

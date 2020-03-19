@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Pie.Models.Category>
+
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>@item.Name</h4>
+            <p>
+                @item.Description
+            </p>
+        </div>
+    </div>
+}
